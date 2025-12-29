@@ -169,6 +169,10 @@
 
 /obj/item/gun/ballistic/revolver/c38/detective/Initialize(mapload)
 	. = ..()
+	// NOVA EDIT ADDITION START
+	if(type != /obj/item/gun/ballistic/revolver/c38/detective)
+		return
+	// NOVA EDIT ADDITION END
 	AddComponent(/datum/component/reskinable_item, /datum/atom_skin/det_revolver)
 
 /obj/item/gun/ballistic/revolver/badass

@@ -70,9 +70,6 @@
 /obj/item/gun/ballistic/revolver/c38/super/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/reskinable_item, /datum/atom_skin/laevateinn_revolver)
-
-/obj/item/gun/ballistic/revolver/c38/super/Initialize(mapload)
-	. = ..()
 	AddComponent(/datum/component/scope, range_modifier = 2)
 	AddComponent(\
 		/datum/component/gun_booster, \
