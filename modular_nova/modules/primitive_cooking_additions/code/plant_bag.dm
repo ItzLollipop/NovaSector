@@ -20,7 +20,7 @@
 
 /// Simple helper to reskin this item into its primitive variant.
 /obj/item/storage/bag/plants/proc/make_primitive()
-	AddComponent(/datum/component/reskinable_item, /datum/atom_skin/plant_bag/linen)
+	AddComponent(/datum/component/reskinable_item, /datum/atom_skin/plant_bag/linen, initial_skin = "Linen")
 
 /// A helper for the primitive variant, for mappers.
 /obj/item/storage/bag/plants/primitive
